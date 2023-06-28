@@ -1,5 +1,4 @@
 import "./style.css";
-
 import * as p5 from "p5";
 
 export const sketch = (p: p5) => {
@@ -13,4 +12,7 @@ export const sketch = (p: p5) => {
   };
 };
 
-export const myp5 = new p5(sketch, document.body);
+export const myp5 = new p5(
+  sketch,
+  document.querySelector("#app") as HTMLElement
+);
